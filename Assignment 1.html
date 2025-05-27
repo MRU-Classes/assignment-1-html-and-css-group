@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Contact Pesobeads for custom bead jewelry">
+  <meta name="keywords" content="contact, email, form, pesobeads">
+  <meta name="author" content="Pesobeads">
+  <title>Contact | Pesobeads</title>
+  <link rel="stylesheet" href="style/global.css">
+  <link rel="stylesheet" href="style/contact.css">
+</head>
+<body>
+  <header>
+    <img src="images/pesobeads.jpg" alt="Pesobeads Logo" class="logo">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="active">Contact</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contact Us</h1>
+
+    <form action="mailto:Pesobeads@gmail.com" method="POST" enctype="text/plain">
+      <label for="subject">Subject:</label>
+      <input type="text" id="subject" name="subject" required maxlength="100"><br><br>
+
+      <label for="body">Message:</label>
+      <textarea id="body" name="body" required></textarea><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com"
+             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><br><br>
+
+      <label for="phone">Phone (optional):</label>
+      <input type="tel" id="phone" name="phone" placeholder="123-456-7890"
+             pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
+
+      <p>Preferred Contact Method:</p>
+      <input type="radio" id="emailOption" name="contactMethod" value="email">
+      <label for="emailOption">Email</label>
+      <input type="radio" id="phoneOption" name="contactMethod" value="phone">
+      <label for="phoneOption">Phone</label><br><br>
+
+      <p>What are you interested in?</p>
+      <input type="checkbox" id="bracelets" name="interest" value="bracelets">
+      <label for="bracelets">Bracelets</label>
+      <input type="checkbox" id="sets" name="interest" value="sets">
+      <label for="sets">Jewelry Sets</label><br><br>
+
+      <label for="date">Preferred Contact Date:</label>
+      <input type="date" id="date" name="date"><br><br>
+
+      <input type="reset" value="Reset">
+      <input type="submit" value="Send">
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Pesobeads</p>
+  </footer>
+</body>
+</html>
+
